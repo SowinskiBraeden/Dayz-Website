@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(37, 67, 152, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
+body {
+    background: rgba(126, 134, 145, .4);
+}
+
+nav {
+    overflow-y: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    background-color: rgba(0,0,0,0.5);
+    line-height: 50px;
+    position: fixed;
+    z-index: 1;
+}
+
+.rules {
+    margin-left: 200px;
+}
+
+#about, #rules {
+    height: 800px;
+}
+
+#about-content, #rules-content, #require-content{
+    transform: translate(0px, 300px);
+}
+
+.text-link {
+    border: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 30px;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    width: 0;
+    background-color: #00a2ff;
+    z-index: 9999;
+    height: 3px;
+    transition: 0.8s all;
+}
+
+ul li:hover::before {
+    width: 100%;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.8s all;
+}
+
+ul li a:hover {
+    color: #00a2ff
+}
+
+.logo {
+    padding: 0 20px;
+    transform: translate(0px, 15px);
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 150%;
+}
+
+.image-wrap {
+    height: 100%;
+    filter: brightness(80%);
+}
+
+.box {
+    position: relative;
+}
+
+.main-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+}
+
+.contact-content {
+    position: absolute;
+    top: 250%;
+    left: 65%;
+}
+
+.require-content {
+    position: absolute;
+    top: 490%;
+    left: 10%;
+    max-width: 800px;
+}
+
+.details-box {
+    color: white
+}
+
+.details-box h2 {
+    font-size: 2.2vw;
+    font-family: arial;
+    margin: 0;
+}
+
+.details-box h1 {
+    font-size: 5vw;
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+}
+
+.details-box p {
+    font-family: arial;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.join-btn {
+    display: inline-block;
+    padding: 11px 40px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 6px;
+    transition: 0.8s all;
+    background-color: transparent;
+    text-transform: capitalize;
+}
+
+.join-btn:hover {
+    background-color: #f6ba18;
+}
+
+.about-container p,
+.creator p {
+    font-family: arial;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Mobile Nav */
+
+.menu {
+    display: none;
+    color: white;
+    size: 125%;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #24252a;
+    overflow-x: hidden;
+    transition: all 0.5s ease 0s;
+}
+
+.overlay--active {
+    width: 100%;
+}
+
+.overlay__content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: all 0.3s ease 0s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #0088a9;
+}
+
+.overlay .close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #edf0f1;
+    cursor: pointer;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px;
+    }
+    .overlay .close {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .nav__links,
+    .cta {
+        display: none;
+    }
+    .menu {
+        display: initial;
+    }
+}
+
+/* Mobile background fix*/
+@media all and (max-width:480px) {
+    img {display:block;margin:0 auto;}
+}

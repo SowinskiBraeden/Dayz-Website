@@ -1,0 +1,24 @@
+{
+  "name": "dayz-website",
+  "version": "1.0.0",
+  "description": "dayz community website",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://Braeden57/Dayz-Website"
+  },    
+  "author": "Braeden Sowinski",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
