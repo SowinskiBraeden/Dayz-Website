@@ -125,13 +125,13 @@ ul li a:hover {
 
 .contact-content {
     position: absolute;
-    top: 250%;
+    top: 310%;
     left: 65%;
 }
 
 .require-content {
     position: absolute;
-    top: 490%;
+    top: 600%;
     left: 10%;
     max-width: 800px;
 }
