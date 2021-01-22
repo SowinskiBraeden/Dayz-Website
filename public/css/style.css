@@ -6,29 +6,23 @@
     font-family: 'Oswald', sans-serif;
     overflow-x: hidden;
 }
-
 body::-webkit-scrollbar {
     width: 1em;
 }
-
 body::-webkit-scrollbar-track {
     box-shadow: inset 0 0 6px rgba(37, 67, 152, 0.3);
 }
-
 body::-webkit-scrollbar-thumb {
     background-color: darkgrey;
     outline: 1px solid slategrey;
 }
-
 html {
     scroll-behavior: smooth;
     overflow-y: scroll;
 }
-
 body {
     background: rgba(126, 134, 145, .4);
 }
-
 nav {
     overflow-y: hidden;
     width: 100%;
@@ -40,34 +34,27 @@ nav {
     position: fixed;
     z-index: 1;
 }
-
 .rules {
     margin-left: 200px;
 }
-
 #about, #rules {
     height: 800px;
 }
-
 #about-content, #rules-content, #require-content{
     transform: translate(0px, 300px);
 }
-
 .text-link {
     border: none;
 }
-
 ul {
     list-style-type: none;
 }
-
 ul li {
     display: inline-block;
     margin-top: 20px;
     margin-left: 30px;
     position: relative;
 }
-
 ul li::before {
     content: '';
     position: absolute;
@@ -78,11 +65,9 @@ ul li::before {
     height: 3px;
     transition: 0.8s all;
 }
-
 ul li:hover::before {
     width: 100%;
 }
-
 ul li a{
     text-decoration: none;
     color: #fff;
@@ -90,31 +75,25 @@ ul li a{
     letter-spacing: 1px;
     transition: 0.8s all;
 }
-
 ul li a:hover {
     color: #00a2ff
 }
-
 .logo {
     padding: 0 20px;
     transform: translate(0px, 15px);
 }
-
 .logo a {
     color: white;
     text-decoration: none;
     font-size: 150%;
 }
-
 .image-wrap {
     height: 100%;
     filter: brightness(80%);
 }
-
 .box {
     position: relative;
 }
-
 .main-content{
     position: absolute;
     top: 50%;
@@ -122,42 +101,35 @@ ul li a:hover {
     transform: translate(-50%, -50%);
     width: 70%;
 }
-
 .contact-content {
     position: absolute;
-    top: 310%;
+    top: 240%;
     left: 65%;
 }
-
 .require-content {
     position: absolute;
-    top: 600%;
+    top: 460%;
     left: 10%;
     max-width: 800px;
 }
-
 .details-box {
     color: white
 }
-
 .details-box h2 {
     font-size: 2.2vw;
     font-family: arial;
     margin: 0;
 }
-
 .details-box h1 {
     font-size: 5vw;
     font-family: 'Oswald', sans-serif;
     margin: 0;
 }
-
 .details-box p {
     font-family: arial;
     font-size: 18px;
     margin-bottom: 15px;
 }
-
 .join-btn {
     display: inline-block;
     padding: 11px 40px;
@@ -170,26 +142,21 @@ ul li a:hover {
     background-color: transparent;
     text-transform: capitalize;
 }
-
 .join-btn:hover {
     background-color: #f6ba18;
 }
-
 .about-container p,
 .creator p {
     font-family: arial;
     font-size: 18px;
     margin-bottom: 15px;
 }
-
 /* Mobile Nav */
-
 .menu {
     display: none;
     color: white;
     size: 125%;
 }
-
 .overlay {
     height: 100%;
     width: 0;
@@ -201,11 +168,9 @@ ul li a:hover {
     overflow-x: hidden;
     transition: all 0.5s ease 0s;
 }
-
 .overlay--active {
     width: 100%;
 }
-
 .overlay__content {
     display: flex;
     height: 100%;
@@ -213,7 +178,6 @@ ul li a:hover {
     align-items: center;
     justify-content: center;
 }
-
 .overlay a {
     color: white;
     text-decoration: none;
@@ -222,12 +186,10 @@ ul li a:hover {
     display: block;
     transition: all 0.3s ease 0s;
 }
-
 .overlay a:hover,
 .overlay a:focus {
     color: #0088a9;
 }
-
 .overlay .close {
     position: absolute;
     top: 20px;
@@ -236,7 +198,6 @@ ul li a:hover {
     color: #edf0f1;
     cursor: pointer;
 }
-
 @media screen and (max-height: 450px) {
     .overlay a {
         font-size: 20px;
@@ -247,7 +208,6 @@ ul li a:hover {
         right: 35px;
     }
 }
-
 @media only screen and (max-width: 800px) {
     .nav__links,
     .cta {
@@ -257,7 +217,6 @@ ul li a:hover {
         display: initial;
     }
 }
-
 /* Mobile background fix*/
 @media all and (max-width:480px) {
     img {display:block;margin:0 auto;}
