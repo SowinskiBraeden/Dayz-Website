@@ -1,0 +1,1 @@
+This website is a informational site for a Dayz Community I am part of. Its just a simple design for basic use.
