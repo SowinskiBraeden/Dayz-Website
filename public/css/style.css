@@ -108,8 +108,8 @@ ul li a:hover {
 }
 .require-content {
     position: absolute;
-    top: 460%;
     left: 10%;
+    bottom: -380%;
     max-width: 800px;
 }
 .details-box {
